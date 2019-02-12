@@ -1,0 +1,29 @@
+{
+  "presets": ["module:metro-react-native-babel-preset", "@babel/preset-flow"],
+  "retainLines": true,
+  "sourceMaps": "inline",
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "App": "./App/",
+          "Components": "./App/Components",
+          "Config": "./App/Config",
+          "Containers": "./App/Containers",
+          "Fixtures": "./App/Fixtures",
+          "Images": "./App/Images",
+          "Lib": "./App/Lib",
+          "Navigation": "./App/Navigation",
+          "Redux": "./App/Redux",
+          "Sagas": "./App/Sagas",
+          "Services": "./App/Services",
+          "Themes": "./App/Themes",
+          "Transforms": "./App/Transforms",
+          "Utils": "./App/Utils"
+        }
+      }
+    ]
+  ]
+}

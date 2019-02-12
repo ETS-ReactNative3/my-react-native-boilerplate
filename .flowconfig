@@ -1,0 +1,29 @@
+[ignore]
+.*/node_modules/.*
+.*/ignite/.*
+.*/.vscode/.*
+.*/flow-typed/.*
+[include]
+
+[libs]
+./custom-definitions/
+
+[lints]
+
+[options]
+module.name_mapper='^App' ->'<PROJECT_ROOT>/App'
+module.name_mapper='^Components' ->'<PROJECT_ROOT>/App/Components'
+module.name_mapper='^Config' ->'<PROJECT_ROOT>/App/Config'
+module.name_mapper='^Containers' ->'<PROJECT_ROOT>/App/Containers'
+module.name_mapper='^Fixtures' ->'<PROJECT_ROOT>/App/Fixtures'
+module.name_mapper='^Images' ->'<PROJECT_ROOT>/App/Images'
+module.name_mapper='^Lib' ->'<PROJECT_ROOT>/App/Lib'
+module.name_mapper='^Navigation' ->'<PROJECT_ROOT>/App/Navigation'
+module.name_mapper='^Redux' ->'<PROJECT_ROOT>/App/Redux'
+module.name_mapper='^Sagas' ->'<PROJECT_ROOT>/App/Sagas'
+module.name_mapper='^Services' ->'<PROJECT_ROOT>/App/Services'
+module.name_mapper='^Themes' ->'<PROJECT_ROOT>/App/Themes'
+module.name_mapper='^Transforms' ->'<PROJECT_ROOT>/App/Transforms'
+module.name_mapper='^Utils' ->'<PROJECT_ROOT>/App/Utils'
+
+[strict]

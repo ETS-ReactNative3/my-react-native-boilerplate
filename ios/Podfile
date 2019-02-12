@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Aero' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for Aero
+  pod 'Firebase/Core'
+
+
+  pod 'react-native-config', :path => '../node_modules/react-native-config'
+
+  pod 'react-native-fbsdk', :path => '../node_modules/react-native-fbsdk'
+
+  target 'AeroTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

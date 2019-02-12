@@ -1,0 +1,44 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": ["airbnb", "prettier"],
+  "plugins": ["react", "jsx-a11y", "import", "babel", "prettier"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "no-unused-vars": "warn",
+    "react/forbid-prop-types": "off",
+    "import/prefer-default-export": "off",
+    "import/no-named-as-default-member": "off",
+    "no-console": "off",
+    "no-throw-literal": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {
+        "alias": {
+          "App": "./App/",
+          "Components": "./App/Components",
+          "Config": "./App/Config",
+          "Containers": "./App/Containers",
+          "Fixtures": "./App/Fixtures",
+          "Images": "./App/Images",
+          "Lib": "./App/Lib",
+          "Navigation": "./App/Navigation",
+          "Redux": "./App/Redux",
+          "Sagas": "./App/Sagas",
+          "Services": "./App/Services",
+          "Themes": "./App/Themes",
+          "Transforms": "./App/Transforms",
+          "Utils": "./App/Utils"
+        }
+      }
+    }
+  },
+  "globals": {
+    "fetch": true
+  }
+}

@@ -1,0 +1,33 @@
+version: "2"
+
+volumes:
+  mysql_dev: {}
+  mysql_backup_dev: {}
+
+services:
+  mysql:
+    build: ./compose/mysql
+    volumes:
+      - mysql_dev:/var/lib/mysql
+      - mysql_backup_dev:/backups
+    env_file:
+      - .env
+    ports:
+      - "3306:3306"
+
+  app:
+    tty: true
+    build:
+      context: .
+      dockerfile: ./compose/app/Dockerfile
+    command: /app/compose/app/start-dev.sh
+    depends_on:
+      - mysql
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    ports:
+      - "1337:1337"
+    links:
+      - mysql

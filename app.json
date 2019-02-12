@@ -1,0 +1,10 @@
+{
+  "name": "Aero",
+  "displayName": "Aero",
+  "expo": {
+    "slug": "Aero",
+    "name": "Aero",
+    "sdkVersion": "28.0.0",
+    "entryPoint": "/Users/terminull/dev/proj/Aero/.vscode/exponentIndex.js"
+  }
+}

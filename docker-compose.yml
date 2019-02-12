@@ -1,0 +1,6 @@
+version: "2"
+services:
+  remotedev-server:
+    image: jhen0409/remotedev-server
+    ports:
+      - "8000:8000"

@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": "./",
+    "paths": {
+      "App/*": ["App/*"],
+      "Components/*": ["App/Components/*"],
+      "Config/*": ["App/Config/*"],
+      "Containers/*": ["App/Containers/*"],
+      "Fixtures/*": ["App/Fixtures/*"],
+      "Images/*": ["App/Images/*"],
+      "Lib/*": ["App/Lib/*"],
+      "Navigation/*": ["App/Navigation/*"],
+      "Redux/*": ["App/Redux/*"],
+      "Sagas/*": ["App/Sagas/*"],
+      "Services/*": ["App/Services/*"],
+      "Themes/*": ["App/Themes/*"],
+      "Transforms/*": ["App/Transforms/*"],
+      "Utils/*": ["App/Utils/*"]
+    }
+  },
+  "exclude": ["node_modules", "**/node_modules/*"]
+}

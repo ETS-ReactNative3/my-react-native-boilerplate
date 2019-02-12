@@ -1,0 +1,1 @@
+{"code":"success","message":"Logged in successfully!","data":{"user":{"email":"test@test.com","username":"testuser"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5jb20iLCJ1c2VybmFtZSI6InRlc3R1c2VyIiwiaWF0IjoxNTM5MzA3MzY1fQ.6odUJ_RN_wL0v0jwOvDuYr_lJLf1JlF-pRn-RgvrkEM"}}

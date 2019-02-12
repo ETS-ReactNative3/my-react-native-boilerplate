@@ -1,0 +1,32 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["@babel/plugin-proposal-class-properties", { "loose": true }],
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "src": "./src/",
+          "Api": "./src/Api",
+          "Config": "./src/Config",
+          "Utils": "./src/Utils",
+          "Controllers": "./src/Api/Controllers",
+          "Models": "./src/Api/Models",
+          "Responses": "./src/Api/Responses",
+          "Routes": "./src/Api/Routes"
+        }
+      }
+    ]
+  ]
+}
